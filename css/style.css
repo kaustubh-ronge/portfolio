@@ -684,3 +684,105 @@ button {
 
 }
 } 
+
+@media (min-width:320px) and (max-width:610px){
+    html,body{
+        width: 100% !important;
+    }
+
+    header{
+        width: 100% !important;
+    }
+
+    .about_wrapper{
+        margin-left: 100px !important;
+    }
+    .banner_wrapper {
+        width: 400px !important;
+        height: 500px;
+       
+        background-image:  url('../images/pro-3.jpg') !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        background-attachment: fixed !important;
+       
+    
+      
+    } 
+    .header_wrapper .container .navbar-toggler {
+        margin-right: 70px;
+    }
+
+    .header_wrapper .container ul{
+        text-align: center;
+    }
+    
+    .contact_wrapper{
+        width: 400px !important;
+        height: 750px !important;
+        background: url('../images/contact.jpg') !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        background-attachment: fixed !important;
+        position: relative !important;
+      
+    }
+    
+    .contact_wrapper:before{
+      content: "";
+      background: rgba(13, 20, 41, 0.8);
+      position: absolute;
+      bottom: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+}
+.portfolio_wrapper{
+    position: relative;
+    background-image: url('../images/pro-2.jpg');
+    background-size: cover;
+    height: 100%;
+    width: 400px;
+    background-attachment: fixed;
+  }
+
+  .portfolio_wrapper::before{
+    content: "";
+    /* background: rgba(21, 42, 106, 0.8); */
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+
+  }
+
+  .portfolio_wrapper .card{
+    right:100px !important ;
+    padding-bottom: 10px !important;
+    width: 100% !important;
+
+   
+  }
+
+  .portfolio_wrapper .card img{
+    height: 100px !important;
+  }
+
+  h1 {
+    font-size: 24px !important;
+    line-height: 38px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+
+}
