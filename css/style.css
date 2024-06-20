@@ -685,7 +685,7 @@ button {
 }
 } 
 
-@media (min-width:320px) and (max-width:610px){
+@media (min-width:320px) and (max-width:438px){
     html,body{
         width: 100% !important;
     }
@@ -695,7 +695,7 @@ button {
     }
 
     .about_wrapper{
-        margin-left: 100px !important;
+        margin-left: 0px !important;
     }
     .banner_wrapper {
         width: 400px !important;
