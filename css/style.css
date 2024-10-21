@@ -202,7 +202,7 @@ button {
     left: 0;
     width: 100%;
     background-color: var(--bg-dark-blue);
-    box-shadow: 0 4px 6px 0 rgba(12, 0, 46, 0.05);
+    box-shadow: 0 4px 6px 0 rgba(27, 0, 102, 0.05);
     -webkit-box-shadow: 0 4px 6px 0 rgba(12, 0, 46, 0.05);
 }
 
@@ -363,8 +363,8 @@ button {
     background-color: #0056b3;
 }
 
-.contact_wrapper{
-  
+.contact_wrapper {
+
     background: url('../images/contact.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -372,14 +372,14 @@ button {
     position: relative;
 }
 
-.contact_wrapper:before{
-  content: "";
-  background: rgba(13, 20, 41, 0.8);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
+.contact_wrapper:before {
+    content: "";
+    background: rgba(13, 20, 41, 0.8);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 /* Animations */
@@ -429,7 +429,7 @@ button {
     animation: fadeInUp 1s ease forwards;
 }
 
-.card{
+.card {
     overflow: hidden;
     padding-bottom: 10px;
     width: 80%;
@@ -439,13 +439,13 @@ button {
 
 .card-content {
     position: relative;
-  }
+}
 
-  .card-title{
+.card-title {
     margin-top: 20px;
-  }
-  
-  .card-description {
+}
+
+.card-description {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -456,26 +456,30 @@ button {
     opacity: 0;
     transition: opacity 0.3s, transform 0.3s;
     transform: translateY(10%);
-  }
-  
-  .card-img-top {
+}
+
+.card-img-top {
     transition: transform 0.3s;
-  }
-  
-  .card-content:hover .card-description {
+}
+
+.card-content:hover .card-description {
     opacity: 1;
     transform: translateY(-40%);
-  }
-  
-  .card-content:hover .card-img-top {
+}
+
+.card-content:hover .card-img-top {
     transform: scale(1.1);
-  }
-  
-  .card-content:hover .card-title {
+}
+
+.card-content:hover .card-title {
     transform: translateY(100%);
-  }
-  
-  .btn-custom {
+}
+
+.card-heading-2{
+    /* position: absolute; */
+}
+
+.btn-custom {
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -485,33 +489,64 @@ button {
     border-radius: 5px;
     transition: background-color 0.3s;
     margin-top: 90px;
-  }
-  
-  .btn-custom:hover {
-    background-color: #0056b3;
-  }
+    width: 100%;
+}
+
+/* Initially hide the hover description */
+.card-hover-description {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    position: absolute;
+   color: rgb(0, 0, 0);
     
-  .banner_wrapper .container .row h6{
+    text-align: center;
+    width: 90%;
+    z-index: 1;
+}
+
+/* Ensure the card has a position for absolute elements */
+.card {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Show the hover description when hovering over the card */
+.card:hover .card-hover-description {
+    opacity: 0;
+}
+
+/* Keep the original description always visible */
+
+
+.btn-custom:hover {
+    background-color: #0056b3;
+}
+
+.banner_wrapper .container .row h6 {
     color: white;
     font-weight: 900;
-  }
+}
 
-  .portfolio_wrapper{
-   
+#portfolio{
+    height: 100%;
+}
+
+.portfolio_wrapper {
+
     height: 500px;
     margin-top: 100px;
     /* margin-bottom: 100px; */
-  }
+}
 
-  .portfolio_wrapper{
+.portfolio_wrapper {
     position: relative;
     background-image: url('../images/pro-2.jpg');
     background-size: cover;
     height: 700px;
     background-attachment: fixed;
-  }
+}
 
-  .portfolio_wrapper::before{
+.portfolio_wrapper::before {
     content: "";
     /* background: rgba(21, 42, 106, 0.8); */
     position: absolute;
@@ -520,13 +555,13 @@ button {
     left: 0;
     right: 0;
 
-  }
+}
 
-  .portfolio_wrapper .card{
+.portfolio_wrapper .card {
     margin-top: 120px;
-  }
+}
 
-  
+
 
 @keyframes fadeInUp {
     0% {
@@ -645,80 +680,88 @@ button {
 
 
 
- 
+
 
 @media (max-width:991px) {
-.portfolio_wrapper .container .row{
-    display: flex ;
-    flex-direction: column;
-    margin-left: 100px !important;
+    .portfolio_wrapper .container .row {
+        display: flex;
+        flex-direction: column;
+        margin-left: 100px !important;
+    }
+
+    .portfolio_wrapper {
+        height: 100%;
+    }
+
+    #card1 {
+        height: 100% !important;
+        width: 400px;
+    }
+
+    #card2 {
+        height: 100% !important;
+        width: 400px;
+    }
+
+    #card3 {
+        height: 100% !important;
+        width: 400px;
+    }
+
+    #card1 img {
+        height: 200px !important;
+
+    }
+
+    #card2 img {
+        height: 200px !important;
+
+    }
+
+    #card3 img {
+        height: 200px !important;
+
+    }
 }
 
-.portfolio_wrapper{
-    height: 100%;
-}
-  
-#card1{
-    height: 100% !important;
-    width: 400px;
-}
-#card2{
-    height: 100% !important;
-    width: 400px;
-}
-#card3{
-    height: 100% !important;
-    width: 400px;
-}
+@media (min-width:320px) and (max-width:438px) {
 
-#card1 img{
-    height: 200px  !important;
-
-}
-#card2 img{
-    height: 200px  !important;
-
-}
-#card3 img{
-    height: 200px  !important;
-
-}
-} 
-
-@media (min-width:320px) and (max-width:438px){
-    html,body{
+    html,
+    body {
         width: 100% !important;
     }
 
-    header{
+    header {
         width: 100% !important;
     }
 
-    .about_wrapper{
+    .about_wrapper {
         margin-left: 0px !important;
     }
+
     .banner_wrapper {
         width: 400px !important;
         height: 500px;
-       
-        background-image:  url('../images/pro-3.jpg') !important;
+
+        background-image: url('../images/pro-3.jpg') !important;
         background-size: cover !important;
         background-repeat: no-repeat !important;
         background-position: center !important;
         background-attachment: fixed !important;
-       
-    
-      
-    } 
+
+
+
+    }
+
     .header_wrapper .container .navbar-toggler {
         margin-right: 70px;
     }
 
-    .header_wrapper .container ul{
+    .header_wrapper .container ul {
         text-align: center;
     }
-    
-    .contact_wrapper{
+
+    .contact_wrapper {
         width: 400px !important;
         height: 750px !important;
         background: url('../images/contact.jpg') !important;
@@ -726,63 +769,64 @@ button {
         background-repeat: no-repeat !important;
         background-attachment: fixed !important;
         position: relative !important;
-      
+
     }
-    
-    .contact_wrapper:before{
-      content: "";
-      background: rgba(13, 20, 41, 0.8);
-      position: absolute;
-      bottom: 0;
-      top: 0;
-      left: 0;
-      right: 0;
-}
-.portfolio_wrapper{
-    position: relative;
-    background-image: url('../images/pro-2.jpg');
-    background-size: cover;
-    height: 100%;
-    width: 400px;
-    background-attachment: fixed;
-  }
 
-  .portfolio_wrapper::before{
-    content: "";
-    /* background: rgba(21, 42, 106, 0.8); */
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
+    .contact_wrapper:before {
+        content: "";
+        background: rgba(13, 20, 41, 0.8);
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
 
-  }
+    .portfolio_wrapper {
+        position: relative;
+        background-image: url('../images/pro-2.jpg');
+        background-size: cover;
+        height: 100%;
+        width: 400px;
+        background-attachment: fixed;
+    }
 
-  .portfolio_wrapper .card{
-    right:100px !important ;
-    padding-bottom: 10px !important;
-    width: 100% !important;
+    .portfolio_wrapper::before {
+        content: "";
+        /* background: rgba(21, 42, 106, 0.8); */
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
 
-   
-  }
+    }
 
-  .portfolio_wrapper .card img{
-    height: 100px !important;
-  }
+    .portfolio_wrapper .card {
+        right: 100px !important;
+        padding-bottom: 10px !important;
+        width: 100% !important;
 
-  h1 {
-    font-size: 24px !important;
-    line-height: 38px;
-}
 
-h2 {
-    font-size: 24px;
-}
+    }
 
-p {
-    font-size: 13px;
-    line-height: 20px;
-}
+    .portfolio_wrapper .card img {
+        height: 100px !important;
+    }
+
+    h1 {
+        font-size: 24px !important;
+        line-height: 38px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 13px;
+        line-height: 20px;
+    }
 
 
 }
