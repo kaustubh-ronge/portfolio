@@ -13,7 +13,7 @@
 
     <!-- custom css files -->
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/responsive-style.css">
 
 </head>
@@ -292,42 +292,56 @@
         <div class="portfolio-img">
             <div class="container mt-5">
                 <div class="row">
-                    <div class=" col-lg-4">
+                    <div class="col-lg-4">
                         <div class="card" id="card1">
                             <div class="card-content">
                                 <img style="height: 200px;" src="images/jarvis.jpg" class="card-img-top" alt="Project Image">
                                 <h5 class="card-title">JARVIS AI</h5>
-                                <p class="card-description">Created an interactive<br> JARVIS AI.</p>
+                                <p class="card-description">Created an interactive JARVIS AI using html css js.</p>
+                                <p class="card-hover-description">This AI provides interactive voice responses and custom commands.</p>
                                 <a href="jarvis/index.html" target="_blank" class="btn btn-custom">Go To</a>
                             </div>
                         </div>
                     </div>
-                    <div class=" col-lg-4">
+        
+                    <div class="col-lg-4">
                         <div class="card" id="card2">
                             <div class="card-content">
                                 <img style="height: 200px;" src="images/calci.jpeg" class="card-img-top" alt="Project Image">
                                 <h5 class="card-title">Web Calculator</h5>
-                                <p class="card-description">Created a Web based Calculator Application.</p>
+                                <p class="card-description">Created a web-based calculator application.</p>
+                                <p class="card-hover-description">Supports basic arithmetic operations with a user-friendly interface.</p>
                                 <a href="calculator/index.html" target="_blank" class="btn btn-custom">Go To</a>
                             </div>
                         </div>
                     </div>
-                    <div class=" col-lg-4">
+        
+                    <div class="col-lg-4">
                         <div class="card" id="card3">
                             <div class="card-content">
                                 <img style="height: 200px;" src="images/weather.jpeg" class="card-img-top" alt="Project Image">
-                                <h5 class="card-title">Weather web app</h5>
-                                <p class="card-description">Created a real time web based weather app .</p>
+                                <h5 class="card-title">Weather Web App</h5>
+                                <p class="card-description">Created a real-time web-based weather app.</p>
+                                <p class="card-hover-description">Displays live weather data based on geolocation.</p>
                                 <a href="weather/index.html" target="_blank" class="btn btn-custom">Go To</a>
                             </div>
                         </div>
                     </div>
-                   
+                    <div class="col-lg-4">
+                        <div class="card" id="card3">
+                            <div class="card-content">
+                                <img style="height: 200px;" src="images/Screenshot (52).png" class="card-img-top" alt="Project Image">
+                                <h5 class="card-title">AI Driven Mock Interviewer</h5>
+                                <p class="card-description">Created a real-time AI Driven Mock Interviewer.</p>
+                                <p class="card-hover-description">Creates 10 Interview Questiones based on topic</p>
+                                <a href="https://ai-mock-interview-psi.vercel.app/dashboard" target="_blank" class="btn btn-custom">Go To</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-
         </div>
+        
 
     </section>
 
@@ -342,25 +356,30 @@
                 <div class="col-lg-6">
                     <div class="contact-form">
                         <h2>CONTACT FORM</h2>
-                        <form>
+                        <form method="POST" action="/register">
                             <div class="mb-3">
-                                <input type="name" class="form-control" id="name" placeholder="Your Name">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name"
+                                    required>
                             </div>
                             <div class="mb-3">
-                                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                                <input type="email" class="form-control" id="email" name="email"
+                                    placeholder="name@example.com" required>
                             </div>
                             <div class="mb-3">
-                                <input type="contact" class="form-control" id="contact" placeholder="Your Contact">
+                                <input type="tel" class="form-control" id="contact" name="contact"
+                                    placeholder="Your Contact" required>
                             </div>
                             <div class="mb-3">
-                                <input type="address" class="form-control" id="address" placeholder="Your Address">
+                                <input type="text" class="form-control" id="address" name="address"
+                                    placeholder="Your Address">
                             </div>
                             <div class="mb-3">
-                                <textarea class="form-control" id="message" rows="3"
+                                <textarea class="form-control" id="message" name="message" rows="3"
                                     placeholder="Other Information"></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </form>
+
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -396,7 +415,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
 
     <!-- custom js link -->
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
