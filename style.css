@@ -215,7 +215,7 @@ button {
     width: 100%;
     height: auto;
     min-height: 750px;
-    background-image: url('/images/pro-3.jpg');
+    background-image: url(/images/pro-3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -365,7 +365,7 @@ button {
 
 .contact_wrapper {
 
-    background: url(/images/contact.jpg);
+    background: url(./images/contact.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -540,7 +540,7 @@ button {
 
 .portfolio_wrapper {
     position: relative;
-    background-image: url(./images/pro-2.jpg);
+    background-image: url('./images/pro-2.jpg');
     background-size: cover;
     height: 700px;
     background-attachment: fixed;
