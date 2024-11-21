@@ -743,7 +743,7 @@ button {
         width: 400px !important;
         height: 500px;
 
-        background-image: url('../images/pro-3.jpg') !important;
+        background-image: url('./images/pro-3.jpg') !important;
         background-size: cover !important;
         background-repeat: no-repeat !important;
         background-position: center !important;
